@@ -12,10 +12,12 @@ USE_L10N = True
 USE_TZ = True
 
 LANGUAGE_CODE = 'en-us'
+
 LANGUAGES = [
     ('en', _('English')),
     ('tr', _('Turkish')),
 ]
+
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
