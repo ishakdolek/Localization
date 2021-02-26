@@ -2,7 +2,7 @@
 
 Django çoklu dil bir demo uygulamasıdır.
 
-#Adım 1: Settings Dosyasını ayarlama
+# Adım 1: Settings Dosyasını ayarlama
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -20,14 +20,14 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
 
-#Adım 2: Locale klasoründe dil dosyalarını oluşturma
+# Adım 2: Locale klasoründe dil dosyalarını oluşturma
 
 python .\manage.py makemessages -l en --ignore=venv/*
 python .\manage.py makemessages -l tr --ignore=venv/*
 
 python .\manage.py compilemessages  --ignore=venv/*
 
-#Adım 3: URL ayarlama
+# Adım 3: URL ayarlama
 
 urlpatterns += i18n_patterns (
    path('', include("lang.urls"))
