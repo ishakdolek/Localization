@@ -24,10 +24,10 @@ LOCALE_PATHS = (
 
 # Adım 2: Locale klasoründe dil dosyalarını oluşturma
 
-python .\manage.py makemessages -l en --ignore=venv/*
-python .\manage.py makemessages -l tr --ignore=venv/*
+* python .\manage.py makemessages -l en --ignore=venv/*
+* python .\manage.py makemessages -l tr --ignore=venv/*
 
-python .\manage.py compilemessages  --ignore=venv/*
+* python .\manage.py compilemessages  --ignore=venv/*
 
 # Adım 3: URL ayarlama
 
